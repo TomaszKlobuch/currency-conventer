@@ -29,28 +29,34 @@
         <legend class="form__legend">
           Przelicznik walut
         </legend>
-        <p>
-          Chcę zamienić:
-        </p>
-        <p>
-          <input class="form__field js-amount" name="amount" list="amount" type="number" required>
-        </p>
-        <p>
-          <select class=" form__select js-currency" id="currency">
+        <label>
+          Kwota w złotówkach:
+        </label>
+        <label>
+          <input class="form__field js-input" name="input" type="number" step="0.01" min="0.01" max="99999999999999999"
+            required>
+        </label>
+        <label>
+          Wymieniam na:
+        </label>
+        <label>
+          <select class=" form__select js-currencyUnit" id="currencyUnit">
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>
           </select>
-        </p>
+        </label>
         <p class="result">
           Kwota po przeliczeniu wynosi:
-          <strong class="js-result"> 0.00</strong>
+        </p>
+        <p>
+          <strong class="js-result">---</strong>
         </p>
         <button class="form__button" type="submit">Zamień</button>
+        <p>
+          Dane z dnia 16.12.2022
+        </p>
       </fieldset>
     </form>
-    <p>
-      <strong>Dane z dnia 16.12.2022</strong>
-    </p>
   </div>
 </body>
 
