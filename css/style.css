@@ -7,9 +7,12 @@ html {
 }
 
 .body{
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+}
+
+.container{
   font-family: 'Ubuntu', sans-serif;
-  background-color:aquamarine;
   max-width: 350px;
   margin: 20px auto;
 }
-

@@ -21,33 +21,35 @@
 </head>
 
 <body class="body">
-  <form class="form js-form">
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">
-        Przelicznik walut
-      </legend>
-      <p>
-        Chcę zamienić:
-      </p>
-      <p>
-        <input class="form__field js-amount" name="amount" list="amount" type="number" required>
-      </p>
-      <p>
-        <select class=" form__select js-currency" id="currency">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-        </select>
-      </p>
-      <p class="result">
-        Kwota po przeliczeniu wynosi:
-        <strong class="js-result"> 0.00</strong>
-      </p>
-      <button class="form__button" type="submit">Zamień</button>
-    </fieldset>
-  </form>
-  <p>
-    Dane z dnia 16.12.2022
-  </p>
+  <div class="container">
+    <form class="form js-form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">
+          Przelicznik walut
+        </legend>
+        <p>
+          Chcę zamienić:
+        </p>
+        <p>
+          <input class="form__field js-amount" name="amount" list="amount" type="number" required>
+        </p>
+        <p>
+          <select class=" form__select js-currency" id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </p>
+        <p class="result">
+          Kwota po przeliczeniu wynosi:
+          <strong class="js-result"> 0.00</strong>
+        </p>
+        <button class="form__button" type="submit">Zamień</button>
+      </fieldset>
+    </form>
+    <p>
+      <strong>Dane z dnia 16.12.2022</strong>
+    </p>
+  </div>
 </body>
 
 </html>
